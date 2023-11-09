@@ -1,0 +1,112 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Inter var, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.dropdown-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 12px 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #674cc3;
+  color: #f5f3fb;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Inter var, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.dropdown-button:hover {
+  background-color: #5942aa;
+}
+
+.dropdown-button .icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.35s 0.1s;
+  transform-origin: center center;
+  transform: rotate(0);
+}
+
+.dropdown-content {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #f5f3fb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  border-radius: 6px;
+  padding: 4px;
+  z-index: 1;
+  width: 224px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown-item {
+  width: 100%;
+  color: #505661;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.1s linear;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  box-sizing: border-box;
+}
+
+.dropdown-item:hover {
+  background-color: #8b5cf6;
+  color: #f5f3fb;
+}
+
+.dropdown-item .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.dropdown[open] .dropdown-button ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+
+.dropdown[open] .dropdown-button .icon {
+  transform: rotate(180deg);
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

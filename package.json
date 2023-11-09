@@ -1,0 +1,24 @@
+{
+  "name": "pushu-ui",
+  "version": "1.0.0",
+  "description": "pushu-ui is a design system that aims to facilitate web application development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo  \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpcoutinho/pushu-ui.git"
+  },
+  "keywords": [
+    "design-system",
+    "pushu",
+    "ufpb"
+  ],
+  "author": "filcoutinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fpcoutinho/pushu-ui/issues"
+  },
+  "homepage": "https://github.com/fpcoutinho/pushu-ui#readme"
+}
